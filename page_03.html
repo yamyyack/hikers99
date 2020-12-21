@@ -17,7 +17,7 @@ body {
 
 /* Style the top navigation bar */
 .topnav {
-  overflow: hidden;
+ /* overflow: hidden;*/
   background-color: #228B22;
 }
 
@@ -117,6 +117,43 @@ body {
 
 
 
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 </style>
 
 </head>
@@ -124,9 +161,66 @@ body {
 
 
 <div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+<div class="dropdown">
+  <button class="dropbtn">1999 Hike</button>
+  <div class="dropdown-content">
+    <a href="/page_01.html">Link 1</a>
+    <a href="/page_02.html">Link 2</a>
+    <a href="/page_03.html">Link 3</a>
+	 <a href="/page_04.html">Link 1</a>
+    <a href="/page_05.html">Link 2</a>
+    <a href="/page_06.html">Link 3</a>
+	 <a href="/page_07.html">Link 1</a>
+    <a href="/page_08.html">Link 2</a>
+    <a href="/page_09.html">Link 3</a>
+	 <a href="/page_10.html">Link 1</a>
+    <a href="/page_11.html">Link 2</a>
+    <a href="/page_12.html">Link 3</a>
+	 <a href="/page_13.html">Link 1</a>
+    <a href="/page_14.html">Link 2</a>
+    <a href="/page_15.html">Link 3</a>
+	 <a href="/page_16.html">Link 1</a>
+    <a href="/page_17.html">Link 2</a>
+    <a href="/page_18.html">Link 3</a>
+	 <a href="/page_19.html">Link 1</a>
+    <a href="/page_20.html">Link 2</a>
+    <a href="/page_21.html">Link 3</a>
+	 <a href="/page_22.html">Link 1</a>
+    <a href="/page_23.html">Link 2</a>
+    <a href="/page_24.html">Link 3</a>
+	 <a href="/page_25.html">Link 1</a>
+    <a href="/page_26.html">Link 2</a>
+    <a href="/page_27.html">Link 3</a>
+	 <a href="/page_28.html">Link 1</a>
+    <a href="/page_29.html">Link 2</a>
+    <a href="/page_30.html">Link 3</a>
+	 <a href="/page_31.html">Link 1</a>
+    <a href="/page_32.html">Link 2</a>
+    <a href="/page_33.html">Link 3</a>
+	<a href="/page_34.html">Link 3</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">2000 Hike</button>
+  <div class="dropdown-content">
+    <a href="/page_35.html">Link 1</a>
+    <a href="/page_36.html">Link 2</a>
+    <a href="/page_37.html">Link 3</a>
+	<a href="/page_38.html">Link 3</a>
+  </div>
+</div>
+ <a href="/page_39.html">2001 Hike</a>
+
+<div class="dropdown">
+  <button class="dropbtn">2002 Hike</button>
+  <div class="dropdown-content">
+    <a href="/page_40.html">Link 1</a>
+    <a href="/page_41.html">Link 2</a>
+    <a href="/page_42.html">Link 3</a>
+	<a href="/page_43.html">Link 3</a>
+	<a href="/page_44.html">Link 3</a>
+  </div>
+</div>
 </div>
 <div class="row">
  <div class="column side"></div>
@@ -184,7 +278,7 @@ body {
 
 
 <a href="/page_02.html">
-<button class="button button1"> < previous</button>
+<button class="button button1"> < Previous</button>
 </a>
 <a href="/page_04.html">
 <button class="button button1">Next ></button>
