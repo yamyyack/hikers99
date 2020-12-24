@@ -2,9 +2,238 @@
 <html>
 <head>
 <title>The Smokies</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+ /* overflow: hidden;*/
+  background-color: #228B22;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .column.side{
+    width: 0%;
+  }
+  .column.middle{
+    width: 100%;
+  }
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+</style>
+
 </head>
 <body>
 
+
+<div class="topnav">
+<div class="dropdown">
+  <button class="dropbtn">1999 Hike</button>
+  <div class="dropdown-content">
+    <a href="/page_01.html">Introduction</a>
+    <a href="/page_02.html">Starting Out</a>
+    <a href="/page_03.html">Link 3</a>
+	 <a href="/page_04.html">Neels Gap</a>
+    <a href="/page_05.html">Hiawassee</a>
+    <a href="/page_06.html">Snow Storm</a>
+	 <a href="/page_07.html">Rainbow Springs</a>
+    <a href="/page_08.html">Nantahala</a>
+    <a href="/page_09.html">Hypothermia</a>
+	 <a href="/page_10.html">The Smokies</a>
+    <a href="/page_11.html">Mountain Momma's</a>
+    <a href="/page_12.html">Max Patch</a>
+	 <a href="/page_13.html">Hot Springs</a>
+    <a href="/page_14.html">Erwin Tennessee</a>
+    <a href="/page_15.html">Roan Mountain</a>
+	 <a href="/page_16.html">Kincora</a>
+    <a href="/page_17.html">Damascus</a>
+    <a href="/page_18.html">Ponies</a>
+	 <a href="/page_19.html">Atkins and Bland</a>
+    <a href="/page_20.html">Woodshole</a>
+    <a href="/page_21.html">Wyoming Skateboarder</a>
+	 <a href="/page_22.html">Blue Ridge</a>
+    <a href="/page_23.html">Waynesboro</a>
+    <a href="/page_24.html">Shenandoah</a>
+	 <a href="/page_25.html">Harper's Ferry</a>
+    <a href="/page_26.html">Half Way</a>
+    <a href="/page_27.html">Duncannon</a>
+	 <a href="/page_28.html">Pennsylvania Rocks</a>
+    <a href="/page_29.html">New Jersey</a>
+    <a href="/page_30.html">New York</a>
+	 <a href="/page_31.html">Massachussetts</a>
+    <a href="/page_32.html">Trail Magic</a>
+    <a href="/page_33.html">Vermont</a>
+	<a href="/page_34.html">End of Trip</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">2000 Hike</button>
+  <div class="dropdown-content">
+    <a href="/page_35.html">White Mountains</a>
+    <a href="/page_36.html">Franconia</a>
+    <a href="/page_37.html">Presidentials</a>
+	<a href="/page_38.html">Mahoosuc</a>
+  </div>
+</div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">2001 Hike</button>
+  <div class="dropdown-content">
+ <a href="/page_39.html">2001 Hike</a>
+  </div>
+</div>
+
+
+
+<div class="dropdown">
+  <button class="dropbtn">2002 Hike</button>
+  <div class="dropdown-content">
+    <a href="/page_40.html">Saddleback</a>
+    <a href="/page_41.html">Bigelows</a>
+    <a href="/page_42.html">Caratunk to Monson</a>
+	<a href="/page_43.html">Wilderness</a>
+	<a href="/page_44.html">Katahdin</a>
+  </div>
+</div>
+</div>
+<div class="row">
+ <div class="column side"></div>
+<div class="column middle">
 <h1>The Smokies</h1>
 
 
@@ -113,5 +342,4 @@
 </a>
 
 
-</body>
-</html>
+</div><div class="column side"></div></div></body></html>
